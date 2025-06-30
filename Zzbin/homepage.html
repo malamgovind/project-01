@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Bus Booking</title>
+    <link rel="stylesheet" href="../project-01/css/home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="bus-icon">🚌</div>
+            <h1>Gujarat Bus Booking</h1>
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Buses</a>
+            <a href="#">Routes</a>
+            <a href="../project-01/login.html">Login</a>
+            <a href="../project-01/register.html">Register</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Book Bus Tickets in Gujarat</h2>
+            <p>Safe, comfortable and affordable travel experience. 500+ buses available across 33 districts!</p>
+        </section>
+        
+        <section class="search-box">
+            <h3>Find Your Bus</h3>
+            <form id="searchForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from">From:</label>
+                        <select id="from" required>
+                            <option value="">-- Select City --</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="to">To:</label>
+                        <select id="to" required>
+                            <option value="">-- Select City --</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Travel Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bus-type">Bus Type:</label>
+                        <select id="bus-type">
+                            <option value="">All Types</option>
+                            <option value="ac">AC Bus</option>
+                            <option value="sleeper">Sleeper Bus</option>
+                            <option value="ordinary">Ordinary Bus</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="search-btn">Search Buses</button>
+            </form>
+        </section>
+
+        <section id="searchResults">
+            <div class="results-placeholder">
+                <div class="bus-icon">🚌</div>
+                <p>Search for buses to see available options</p>
+            </div>
+        </section>
+        
+        <section class="popular-routes">
+            <h3>Popular Gujarat Routes</h3>
+            <div class="routes-grid">
+                <div class="route-card">
+                    <h4>Ahmedabad → Vadodara</h4>
+                    <p><span>Distance:</span> 110 km</p>
+                    <p><span>Fare:</span> ₹200 - ₹400</p>
+                    <p><span>Time:</span> 2-3 hours</p>
+                    <p><span>Buses:</span> 12 available</p>
+                </div>
+                
+                <div class="route-card">
+                    <h4>Surat → Rajkot</h4>
+                    <p><span>Distance:</span> 320 km</p>
+                    <p><span>Fare:</span> ₹500 - ₹900</p>
+                    <p><span>Time:</span> 6-7 hours</p>
+                    <p><span>Buses:</span> 8 available</p>
+                </div>
+                
+                <div class="route-card">
+                    <h4>Bhavnagar → Jamnagar</h4>
+                    <p><span>Distance:</span> 180 km</p>
+                    <p><span>Fare:</span> ₹300 - ₹550</p>
+                    <p><span>Time:</span> 4-5 hours</p>
+                    <p><span>Buses:</span> 6 available</p>
+                </div>
+                
+                <div class="route-card">
+                    <h4>Gandhinagar → Ahmedabad</h4>
+                    <p><span>Distance:</span> 30 km</p>
+                    <p><span>Fare:</span> ₹50 - ₹100</p>
+                    <p><span>Time:</span> 45-60 min</p>
+                    <p><span>Buses:</span> 20 available</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 Gujarat Bus Booking. All rights reserved</p>
+        <p>Phone: +91 98765 43210 | Email: info@gujaratbusbooking.com</p>
+    </footer>
+
+    <script src="../project-01/js/script.js"></script>
+</body>
+</html>
