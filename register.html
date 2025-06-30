@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Gujarat Bus Booking</title>
+    <link rel="stylesheet" href="../project-01/css/register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="bus-icon">🚌</div>
+            <h1>Gujarat Bus Booking</h1>
+        </div>
+        <nav>
+            <a href="../project-01/index.html">Home</a>
+            <a href="../project-01/login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h2>Create New Account</h2>
+                <p>Please fill in your details</p>
+            </div>
+            
+            <form id="registerForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" required placeholder="Your mobile number">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" required placeholder="Your email address">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" required placeholder="Create password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" required placeholder="Re-enter password">
+                    </div>
+                </div>
+                
+                <div class="form-agreement">
+                    <label>
+                        <input type="checkbox" required> 
+                        I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                
+                <button type="submit">Register</button>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="../project-01/login.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Gujarat Bus Booking. All rights reserved</p>
+        <p>Phone: +91 98765 xxxxx | Email: info@gujaratbusbooking.com</p>
+         <!-- +91 98765 43210  -->
+    </footer>
+
+    <script src="../project-01/js/script.js"></script>
+</body>
+</html>

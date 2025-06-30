@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Bus Booking - All 33 Districts</title>
+    <link rel="stylesheet" href="../project-01/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="bus-icon">
+                <img src="../project-01/photo/GSRTC-logo.png" alt="buslogo">
+            </div>
+            <h1>Gujarat Bus Booking</h1>
+        </div>
+        <nav>
+            <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-bus"></i> Buses</a>
+            <a href="#"><i class="fas fa-route"></i> Routes</a>
+            <a href="../project-01/login.html"><i class="fas fa-user"></i> Login</a>
+            <a href="../project-01/register.html"><i class="fas fa-user-plus"></i> Register</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+  <div class="text">
+   NOTE: 1. User should never press either forward or Back buttons during the transaction. 📌 ટિકિટ બુક કરતા પહેલા એક્વાર BROWSER HISTORY ક્લિયર કરવી અને મોબાઇલ એપ્લીકેશન અપડેટ કરવી. 2. User should never refresh the page during the transaction. 📌 ટિકિટ બુક કરતી વખતે FORWORD કે BACK બટનનો ઉપયોગ કરવો નહિ. 3. Please ensure the reliable Internet Connectivity during entire transaction. 📌 ટ્ર્રાંઝેક્શન કરતી વખતે પેજને REFRESH કરવુ નહિ. 4. Ensure whole transaction should be completed within 15 minutes otherwise Seat might have got released. 📌 ટિકિટ બુકિંગ કરતી વખતે ટિકિટના ટ્રાંઝેક્શનની સંપુર્ણ પ્રક્રીયા ૧૫ મિનિટની અંદર પુર્ણ કરી લેવી નહિતર સીટ બુક થશે નહિ. 5. For any FAILURE Transactions during E & M Booking (Amount debited from the bank account but Ticket no generated), Refund will be processed within 7 to 10 working days. 📌 જો ઓનલાઇન અને મોબાઇલ એપ્લીકેશનથી ટિકિટ બુક કરતી વખતે ટ્રાંઝેક્શન ફેઇલ થાય (પૈસા કપાય જાય અને ટિકિટ બુક ના થાય) તો રીફંડ મુસાફરની બેંક દ્વારા મુસાફરના બેંક ખાતામા જમા કરવામા આવશે.    " હવેથી ગુજરાત એસ.ટીની વોલ્વો સ્લીપર અને એ.સી સ્લીપરમાં દિવ્યાંગ કાર્ડ ધારક મુસાફરો પોતાના ઓળખકાર્ડના આધારે બુકિંગ કરી મુસાફરી કરી શકશે.
+  </div>
+</div>
+
+
+    <div class="container">
+        <section class="hero">
+            <h2>Book Bus Tickets Across Gujarat</h2>
+            <p>Safe, comfortable and affordable travel experience. 1000+ buses available across all districts!</p>
+            <p class="district-count">33 Districts Covered</p>
+        </section>
+
+        <section class="search-box">
+            <h3><i class="fas fa-search"></i> Find Your Bus</h3>
+            <form id="searchForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from"><i class="fas fa-map-marker-alt"></i> From:</label>
+                        <select id="from" required>
+                            <option value="">-- Select District --</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Amreli">Amreli</option>
+                            <option value="Anand">Anand</option>
+                            <option value="Aravalli">Aravalli</option>
+                            <option value="Banaskantha">Banaskantha</option>
+                            <option value="Bharuch">Bharuch</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                            <option value="Botad">Botad</option>
+                            <option value="Chhota Udaipur">Chhota Udaipur</option>
+                            <option value="Dahod">Dahod</option>
+                            <option value="Dang">Dang</option>
+                            <option value="Devbhoomi Dwarka">Devbhoomi Dwarka</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Gir Somnath">Gir Somnath</option>
+                            <option value="Jamnagar">Jamnagar</option>
+                            <option value="Junagadh">Junagadh</option>
+                            <option value="Kheda">Kheda</option>
+                            <option value="Kutch">Kutch</option>
+                            <option value="Mahisagar">Mahisagar</option>
+                            <option value="Mehsana">Mehsana</option>
+                            <option value="Morbi">Morbi</option>
+                            <option value="Narmada">Narmada</option>
+                            <option value="Navsari">Navsari</option>
+                            <option value="Panchmahal">Panchmahal</option>
+                            <option value="Patan">Patan</option>
+                            <option value="Porbandar">Porbandar</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Sabarkantha">Sabarkantha</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Surendranagar">Surendranagar</option>
+                            <option value="Tapi">Tapi</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Valsad">Valsad</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="to"><i class="fas fa-map-marker-alt"></i> To:</label>
+                        <select id="to" required>
+                            <option value="">-- Select District --</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Amreli">Amreli</option>
+                            <option value="Anand">Anand</option>
+                            <option value="Aravalli">Aravalli</option>
+                            <option value="Banaskantha">Banaskantha</option>
+                            <option value="Bharuch">Bharuch</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                            <option value="Botad">Botad</option>
+                            <option value="Chhota Udaipur">Chhota Udaipur</option>
+                            <option value="Dahod">Dahod</option>
+                            <option value="Dang">Dang</option>
+                            <option value="Devbhoomi Dwarka">Devbhoomi Dwarka</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Gir Somnath">Gir Somnath</option>
+                            <option value="Jamnagar">Jamnagar</option>
+                            <option value="Junagadh">Junagadh</option>
+                            <option value="Kheda">Kheda</option>
+                            <option value="Kutch">Kutch</option>
+                            <option value="Mahisagar">Mahisagar</option>
+                            <option value="Mehsana">Mehsana</option>
+                            <option value="Morbi">Morbi</option>
+                            <option value="Narmada">Narmada</option>
+                            <option value="Navsari">Navsari</option>
+                            <option value="Panchmahal">Panchmahal</option>
+                            <option value="Patan">Patan</option>
+                            <option value="Porbandar">Porbandar</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Sabarkantha">Sabarkantha</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Surendranagar">Surendranagar</option>
+                            <option value="Tapi">Tapi</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Valsad">Valsad</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date"><i class="fas fa-calendar-alt"></i> Travel Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bus-type"><i class="fas fa-bus"></i> Bus Type:</label>
+                        <select id="bus-type">
+                            <option value="">All Types</option>
+                            <option value="ac">AC Bus</option>
+                            <option value="sleeper">Sleeper Bus</option>
+                            <option value="ordinary">Ordinary Bus</option>
+                            <option value="luxury">Luxury Bus</option>
+                            <option value="volvo">Volvo Bus</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i> Search Buses</button>
+            </form>
+        </section>
+
+        <section id="searchResults">
+            <div class="results-placeholder">
+                <div class="bus-icon02">🚌</div>
+                <!-- <p>Search for buses to see available options</p> -->
+                 <p>Your booked buses</p>
+            </div>
+        </section>
+
+        <section class="districts-section">
+            <h3><i class="fas fa-map-marked-alt"></i> All 33 Districts of Gujarat</h3>
+            <div class="districts-grid">
+                <div class="district-item">Ahmedabad</div>
+                <div class="district-item">Amreli</div>
+                <div class="district-item">Anand</div>
+                <div class="district-item">Aravalli</div>
+                <div class="district-item">Banaskantha</div>
+                <div class="district-item">Bharuch</div>
+                <div class="district-item">Bhavnagar</div>
+                <div class="district-item">Botad</div>
+                <div class="district-item">Chhota Udaipur</div>
+                <div class="district-item">Dahod</div>
+                <div class="district-item">Dang</div>
+                <div class="district-item">Devbhoomi Dwarka</div>
+                <div class="district-item">Gandhinagar</div>
+                <div class="district-item">Gir Somnath</div>
+                <div class="district-item">Jamnagar</div>
+                <div class="district-item">Junagadh</div>
+                <div class="district-item">Kheda</div>
+                <div class="district-item">Kutch</div>
+                <div class="district-item">Mahisagar</div>
+                <div class="district-item">Mehsana</div>
+                <div class="district-item">Morbi</div>
+                <div class="district-item">Narmada</div>
+                <div class="district-item">Navsari</div>
+                <div class="district-item">Panchmahal</div>
+                <div class="district-item">Patan</div>
+                <div class="district-item">Porbandar</div>
+                <div class="district-item">Rajkot</div>
+                <div class="district-item">Sabarkantha</div>
+                <div class="district-item">Surat</div>
+                <div class="district-item">Surendranagar</div>
+                <div class="district-item">Tapi</div>
+                <div class="district-item">Vadodara</div>
+                <div class="district-item">Valsad</div>
+            </div>
+        </section>
+
+        <section class="popular-routes">
+            <h3><i class="fas fa-star"></i> Popular Gujarat Routes</h3>
+            <div class="routes-grid">
+                <!-- <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Ahmedabad → Vadodara</h4>
+                    <p><span>Distance:</span> 110 km</p>
+                    <p><span>Fare:</span> ₹200 - ₹400</p>
+                    <p><span>Time:</span> 2-3 hours</p>
+                    <p class="bus-count">12 buses available</p>
+                </div> -->
+
+                <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Surat → Rajkot</h4>
+                    <p><span>Distance:</span> 320 km</p>
+                    <p><span>Fare:</span> ₹500 - ₹900</p>
+                    <p><span>Time:</span> 6-7 hours</p>
+                    <!-- <p class="bus-count">8 buses available</p> -->
+                </div>
+
+                <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Bhavnagar → Jamnagar</h4>
+                    <p><span>Distance:</span> 180 km</p>
+                    <p><span>Fare:</span> ₹300 - ₹550</p>
+                    <p><span>Time:</span> 4-5 hours</p>
+                    <!-- <p class="bus-count">6 buses available</p> -->
+                </div>
+
+                <!-- <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Gandhinagar → Ahmedabad</h4>
+                    <p><span>Distance:</span> 30 km</p>
+                    <p><span>Fare:</span> ₹50 - ₹100</p>
+                    <p><span>Time:</span> 45-60 min</p>
+                    <p class="bus-count">20 buses available</p>
+                </div> -->
+
+                <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Kutch → Ahmedabad</h4>
+                    <p><span>Distance:</span> 400 km</p>
+                    <p><span>Fare:</span> ₹600 - ₹1100</p>
+                    <p><span>Time:</span> 8-9 hours</p>
+                    <!-- <p class="bus-count">7 buses available</p> -->
+                </div>
+
+                <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Valsad → Surat</h4>
+                    <p><span>Distance:</span> 90 km</p>
+                    <p><span>Fare:</span> ₹150 - ₹300</p>
+                    <p><span>Time:</span> 2 hours</p>
+                    <!-- <p class="bus-count">15 buses available</p> -->
+                </div>
+
+                <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Junagadh → Somnath</h4>
+                    <p><span>Distance:</span> 85 km</p>
+                    <p><span>Fare:</span> ₹120 - ₹250</p>
+                    <p><span>Time:</span> 1.5 hours</p>
+                    <!-- <p class="bus-count">10 buses available</p> -->
+                </div>
+
+                <div class="route-card">
+                    <h4><i class="fas fa-route"></i> Mehsana → Patan</h4>
+                    <p><span>Distance:</span> 65 km</p>
+                    <p><span>Fare:</span> ₹100 - ₹180</p>
+                    <p><span>Time:</span> 1.25 hours</p>
+                    <!-- <p class="bus-count">9 buses available</p> -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Gujarat Bus Booking. All rights reserved</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 98765 xxxxx</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@gujaratbusbooking.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Gandhinagar, Gujarat</span>
+            </div>
+        </div>
+        <p>Proudly serving all 33 districts of Gujarat</p>
+    </footer>
+
+    <script src="../project-01/js/script.js"></script>
+</body>
+
+</html>
