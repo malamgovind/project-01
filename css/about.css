@@ -14,14 +14,14 @@
             padding: 20px; 
         } */
 
-        body {
-    /* background: linear-gradient(135deg, #1a2a6c, #2a5298); */
-    color: #fff;
-    line-height: 1.6;
-    min-height: 100vh;
-    padding: 20px;
-    background-attachment: fixed;
-}
+       body {
+           /* background: linear-gradient(135deg, #1a2a6c, #2a5298); */
+           color: #fff;
+           line-height: 1.6;
+           min-height: 100vh;
+           padding: 20px;
+           background-attachment: fixed;
+       }
 
 
        header {
@@ -154,8 +154,8 @@
        }
 
        .feature-card .icon-container i img {
-        width: 30%;
-        height: auto;
+           width: 30%;
+           height: auto;
        }
 
        .feature-card:hover {
