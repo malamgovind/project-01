@@ -40,7 +40,7 @@ header {
 .bus-icon {
     font-size: 0.8rem;
     background-color: white;
-    padding-top:2px;
+    padding-top: 2px;
     padding-bottom: -2px;
     border-radius: 10%;
     -webkit-border-radius: 10%;
@@ -69,6 +69,14 @@ nav a {
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
+
+    /* &.about01 {
+       font-size: 24px;
+    } */
+
+    /* &span {
+        font-size: 5px;
+    } */
 }
 
 nav a:hover {
@@ -79,7 +87,7 @@ nav a.active {
     background: #3498db;
 }
 
- .wrapper {
+.wrapper {
     background: #fffae6;
     overflow: hidden;
     white-space: nowrap;
@@ -94,17 +102,26 @@ nav a.active {
     -o-border-radius: 10px;
 }
 
-  .text {
+.text {
     display: inline-block;
-    animation: ticker 150s linear infinite;
+    animation: ticker 200s linear infinite;
     font-size: 18px;
     color: #000000;
-    -webkit-animation: ticker 150s linear infinite;
+    -webkit-animation: ticker 200s linear infinite;
 }
 
-  @keyframes ticker {
-    from { transform: translateX(15%); -webkit-transform: translateX(15%); -moz-transform: translateX(15%); -ms-transform: translateX(15%); -o-transform: translateX(15%); }
-    to { transform: translateX(-100%);}
+@keyframes ticker {
+    from {
+        transform: translateX(14%);
+        -webkit-transform: translateX(14%);
+        -moz-transform: translateX(14%);
+        -ms-transform: translateX(14%);
+        -o-transform: translateX(14%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 
@@ -174,7 +191,7 @@ nav a.active {
     font-size: 1.1rem;
 }
 
-.form-group select, 
+.form-group select,
 .form-group input {
     width: 100%;
     padding: 14px;
@@ -278,7 +295,7 @@ nav a.active {
     gap: 15px;
 }
 
-.bus-details > div {
+.bus-details>div {
     flex: 1;
     min-width: 200px;
 }
