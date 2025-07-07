@@ -194,30 +194,3 @@ button:hover {
 .form-footer a:hover {
     text-decoration: underline;
 }
-
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .container {
-        padding: 10px;
-    }
-    
-    .auth-box {
-        padding: 25px;
-    }
-    
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-} */

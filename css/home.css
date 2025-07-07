@@ -131,7 +131,7 @@ nav a.active {
     padding: 40px 20px;
     margin-bottom: 40px;
     background: rgba(0, 0, 0, 0.6);
-    background: url(../photo/HomeBanner.jpg.webp);
+    background: url(../photo/background-20250613.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -396,30 +396,3 @@ footer p {
     margin: 8px 0;
     font-size: 1.1rem;
 }
-
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .search-box {
-        padding: 25px;
-    }
-    
-    .container {
-        padding: 10px;
-    }
-} */
