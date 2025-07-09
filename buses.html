@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Bus Booking</title>
+    <link rel="stylesheet" href="./css/buses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <div class="bus-icon">
+                <img src="./photo/GSRTC-logo.png" alt="buslogo">
+            </div>
+            <h1>Gujarat Bus Booking</h1>
+        </div>
+        <nav>
+            <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="./buses.html" class="active"><i class="fas fa-bus"></i> Buses</a>
+            <!-- <a href="#"><i class="fas fa-route"></i> Routes</a> -->
+            <a href="./login.html"><i class="fas fa-user"></i> Account</a>
+            <!-- <a href="./register.html"><i class="fas fa-user-plus"></i> Register</a> -->
+            <a href="./about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Header -->
+        <!-- Warning Banner -->
+        <div class="warning-banner">
+            <i class="fas fa-exclamation-triangle fa-2x"></i>
+            <div>
+                <strong>IMPORTANT NOTICE:</strong> Please do not press the browser's back or forward buttons during the
+                booking process to avoid transaction failures.
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Book Bus Tickets Across <span class="highlight">Gujarat</span></h2>
+            <p>Discover the most convenient way to travel across Gujarat. With over 500+ buses and 100+ routes, we
+                connect you to every corner of the state safely and comfortably.</p>
+        </section>
+
+        <!-- City Highlights -->
+        <section class="cities-section">
+            <div class="cities-header">
+                <h2>Major Cities in Gujarat</h2>
+                <p>Explore popular destinations connected by our bus network</p>
+            </div>
+
+            <div class="cities-grid">
+                <div class="city-card">
+                    <div class="city-img"
+                        style="background: url(./photo/ahmedabad.jpg); background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="city-content">
+                        <h3>Ahmedabad</h3>
+                        <p>Commercial capital of Gujarat with rich cultural heritage and modern infrastructure.</p>
+                        <div class="city-stats">
+                            <div class="stat">
+                                <div class="stat-value">120+</div>
+                                <div class="stat-label">Daily Buses</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">50+</div>
+                                <div class="stat-label">Routes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <div class="city-img"
+                        style="background: url(./photo/surat.jpg); background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="city-content">
+                        <h3>Surat</h3>
+                        <p>Diamond and textile hub of India with vibrant markets and delicious cuisine.</p>
+                        <div class="city-stats">
+                            <div class="stat">
+                                <div class="stat-value">90+</div>
+                                <div class="stat-label">Daily Buses</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">35+</div>
+                                <div class="stat-label">Routes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <div class="city-img"
+                        style="background: url(./photo/vadodara.jpg); background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="city-content">
+                        <h3>Vadodara</h3>
+                        <p>Cultural capital known for palaces, museums, and educational institutions.</p>
+                        <div class="city-stats">
+                            <div class="stat">
+                                <div class="stat-value">75+</div>
+                                <div class="stat-label">Daily Buses</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">30+</div>
+                                <div class="stat-label">Routes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-card">
+                    <div class="city-img"
+                        style="background: url(./photo/rajkot.jpg); background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                    <div class="city-content">
+                        <h3>Rajkot</h3>
+                        <p>Historical city with significant contributions to India's independence movement.</p>
+                        <div class="city-stats">
+                            <div class="stat">
+                                <div class="stat-value">65+</div>
+                                <div class="stat-label">Daily Buses</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">28+</div>
+                                <div class="stat-label">Routes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Routes -->
+        <section class="routes-section">
+            <div class="section-title">
+                <h2>Popular Bus Routes</h2>
+                <p>Most traveled routes in Gujarat</p>
+            </div>
+
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-header">
+                        <h3>Ahmedabad to Surat</h3>
+                        <div class="price">₹450</div>
+                    </div>
+                    <div class="route-details">
+                        <div class="detail-icon"><i class="fas fa-clock"></i></div>
+                        <p>Duration: 5-6 hours</p>
+                        <div class="detail-icon"><i class="fas fa-bus"></i></div>
+                        <p>AC Sleeper & Seater</p>
+                        <div class="detail-icon"><i class="fas fa-calendar"></i></div>
+                        <p>30+ daily departures</p>
+                    </div>
+                    <!-- <button class="btn">BookNow</button> -->
+                </div>
+
+                <div class="route-card">
+                    <div class="route-header">
+                        <h3>Vadodara to Rajkot</h3>
+                        <div class="price">₹380</div>
+                    </div>
+                    <div class="route-details">
+                        <div class="detail-icon"><i class="fas fa-clock"></i></div>
+                        <p>Duration: 4-5 hours</p>
+                        <div class="detail-icon"><i class="fas fa-bus"></i></div>
+                        <p>AC & Non-AC options</p>
+                        <div class="detail-icon"><i class="fas fa-calendar"></i></div>
+                        <p>20+ daily departures</p>
+                    </div>
+                    <!-- <button class="btn">Book Now</button> -->
+                </div>
+
+                <div class="route-card">
+                    <div class="route-header">
+                        <h3>Surat to Bhavnagar</h3>
+                        <div class="price">₹520</div>
+                    </div>
+                    <div class="route-details">
+                        <div class="detail-icon"><i class="fas fa-clock"></i></div>
+                        <p>Duration: 6-7 hours</p>
+                        <div class="detail-icon"><i class="fas fa-bus"></i></div>
+                        <p>Luxury AC Sleeper</p>
+                        <div class="detail-icon"><i class="fas fa-calendar"></i></div>
+                        <p>15+ daily departures</p>
+                    </div>
+                    <!-- <button class="btn">Book Now</button> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="section-title">
+                <h2>What Our Travelers Say</h2>
+                <p>Thousands of happy customers across Gujarat</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">R</div>
+                        <div>
+                            <h4>Rajesh Patel</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The Ahmedabad to Surat route is my regular commute. The buses are always on time and
+                        comfortable. The booking process is super easy and their customer support is excellent!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">P</div>
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I booked a last-minute ticket to Jamnagar through Gujarat Bus. The entire process took less than
+                        2 minutes. The bus was clean and the driver was very professional. Highly recommended!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">A</div>
+                        <div>
+                            <h4>Arjun Mehta</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"As a frequent traveler across Gujarat, I appreciate the punctuality and cleanliness of the
+                        buses. The mobile ticket feature is a game-changer. No more printing tickets!"</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Gujarat Bus Booking. All rights reserved</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98765 xxxxx</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@gujaratbusbooking.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Gandhinagar, Gujarat</span>
+                </div>
+            </div>
+            <p>Proudly serving all 33 districts of Gujarat</p>
+        </footer>
+    </div>
+</body>
+
+</html>

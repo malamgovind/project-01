@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1a2a6c, #2a5298);
+    background: linear-gradient(135deg, #71bee2, #4153bb);
     color: #fff;
     line-height: 1.6;
     min-height: 100vh;
@@ -231,7 +231,7 @@ nav a.active {
 .results-placeholder {
     text-align: center;
     padding: 60px 40px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 254, 254, 0.8);
     border-radius: 15px;
     border: 2px dashed #3498db;
 }
@@ -256,22 +256,22 @@ nav a.active {
 }
 
 .district-item {
-    background: rgba(240, 111, 88, 0.1);
+    background: rgba(88, 116, 240, 0.2);
     padding: 15px 10px;
     border-radius: 8px;
     text-align: center;
     transition: all 0.3s ease;
     font-weight: 600;
-    color: #bbcde6;
+    color: #ebeef3;
     cursor: pointer;
-    border: 1px solid rgba(174, 195, 219, 0.5);
+    border: 1px solid rgba(174, 195, 219, 0.8);
 }
 
-.district-item:hover {
+/* .district-item:hover {
     background: rgba(26, 109, 204, 0.2);
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .bus-card {
     background: rgba(255, 255, 255, 0.1);
@@ -333,11 +333,52 @@ nav a.active {
     background: #219653;
 }
 
+/* Features Section */
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #1a3a5f;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
 .popular-routes {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
+    /* background: rgba(0, 0, 0, 0.6); */
+    background-color: white;
+    color: black;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
@@ -356,17 +397,18 @@ nav a.active {
 }
 
 .route-card {
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background-color: rgb(227, 239, 243);
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #3498db;
     transition: transform 0.3s;
 }
 
-.route-card:hover {
+/* .route-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
-}
+} */
 
 .route-card h4 {
     color: #f1c40f;

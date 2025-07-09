@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #71bee2, #4153bb);
+    /* background: linear-gradient(135deg, #1a2a6c, #2a5298); */
+    /* background: linear-gradient(135deg, #69c3ec, #0f249c); */
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bus-icon {
+    font-size: 0.8rem;
+    background-color: white;
+    padding-top: 2px;
+    padding-bottom: -2px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.bus-icon02 {
+    font-size: 4.5rem;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #f39c12;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    /* &.about01 {
+       font-size: 24px;
+    } */
+
+    /* &span {
+        font-size: 5px;
+    } */
+}
+
+nav a:hover {
+    background: #3498db;
+}
+
+nav a.active {
+    background: #3498db;
+}
+
+/* Warning Banner */
+.warning-banner {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.8);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(231, 76, 60, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(26, 58, 95, 0.2), rgba(26, 58, 95, 0.2)), url('../photo/HomeBanner.jpg.webp') center/cover;
+    border-radius: 15px;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* City Highlights */
+.cities-section {
+    background: white;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+.cities-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cities-header h2 {
+    color: #006c8d;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.cities-header h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #3498db, #1a3a5f);
+    border-radius: 2px;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.city-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.city-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.city-content {
+    padding: 20px;
+}
+
+.city-card h3 {
+    color: #1a3a5f;
+    margin-bottom: 10px;
+}
+
+.city-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.city-stats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    color: #3498db;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.stat-label {
+    color: #777;
+    font-size: 0.8rem;
+}
+
+/* Popular Routes */
+.routes-section {
+    background: white;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    color: black;
+}
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.route-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border-left: 4px solid #3498db;
+    display: flex;
+    flex-direction: column;
+}
+
+.route-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.route-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.route-card h3 {
+    color: #1a3a5f;
+    font-size: 1.4rem;
+}
+
+.price {
+    background: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.route-details {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.detail-icon {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.route-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.route-card .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Testimonials */
+.testimonials {
+    background: url(../photo/busstand.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to right, #afcff7, #b8cad8); */
+    /* background-color: rgb(162, 187, 216); */
+    padding: 50px 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials .section-title h2 {
+    color: green;
+}
+
+.testimonials .section-title h2:after {
+    background: linear-gradient(to right, #3498db, #8dc6ff);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.testimonial-card {
+    background: rgba(169, 201, 202, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.testimonial-card h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 0.9rem;
+}
+
+.testimonial-card p {
+    /* color: #e0e0e0; */
+    color: black;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
